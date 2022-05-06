@@ -43,6 +43,8 @@ app.post('/',(req,res)=>{
 
 app.use('/',router);
 
-app.listen(3000,()=>{
-    console.log('App listening to port 3000');
+const PORT=process.env.PORT || 8080;
+
+app.listen(PORT,()=>{
+    console.log('App listening to port 8080');
 });
